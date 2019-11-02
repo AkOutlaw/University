@@ -1,0 +1,18 @@
+fitstname=Alex surname=Smith dataOfBirth=11.11.2001 scholarship=2500 faculty =KIT 47B courseOfStudy=3
+fitstname=John surname=Doe dataOfBirth=19.06.2000 scholarship=1400 faculty =KIT 48B courseOfStudy=2
+fitstname=Sam surname=Diaz dataOfBirth=15.03.1999 scholarship=1400 faculty =KIT 47A courseOfStudy=3
+fitstname=Dan surname=Jones dataOfBirth=02.04.2002 scholarship=2500 faculty =KIT 49B courseOfStudy=1
+fitstname=Vin surname=Diezel dataOfBirth=07.06.1998 scholarship=1300 faculty =KIT 46B courseOfStudy=4
+fitstname=Dan surname=Hardy dataOfBirth=07.09.1997 scholarship=1400 faculty =KIT 45B courseOfStudy=5
+fitstname=Ben surname=Davis dataOfBirth=16.01.1996 scholarship=1400 faculty =KIT 44 courseOfStudy=6
+fitstname=Horhe surname=Ibanias dataOfBirth=19.04.2000 scholarship=1300 faculty =KIT 48A courseOfStudy=2
+fitstname=Enrico surname=Pedro dataOfBirth=10.10.2001 scholarship=1300 faculty =KIT 47B courseOfStudy=3
+fitstname=Brian surname=Convey dataOfBirth=02.06.2001 scholarship=1300 faculty =KIT 49A courseOfStudy=1
+fitstname=Tom surname=Branson dataOfBirth=18.11.1996 salary=11500 faculty =KIT 44 expiriance=16 years
+fitstname=Ivan surname=Ivanov dataOfBirth=11.06.1995 salary=9500 faculty =KIT 44 expiriance=7 years
+fitstname=Benson surname=Henderson dataOfBirth=18.05.2000 scholarship=1300 faculty =KIT 48C courseOfStudy=2
+fitstname=Alexis surname=Sanches dataOfBirth=07.09.1998 scholarship=1300 faculty =KIT 46B courseOfStudy=4
+fitstname=Diego surname=Sanches dataOfBirth=17.09.1996 scholarship=1400 faculty =KIT 45A courseOfStudy=5
+fitstname=Tom surname=Branson dataOfBirth=18.11.1996 scholarship=1500 faculty =KIT 44 courseOfStudy=6
+fitstname=Ivan surname=Ivanov dataOfBirth=11.06.1995 scholarship=1500 faculty =KIT 44 courseOfStudy=6
+

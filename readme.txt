@@ -1,3 +1,3 @@
-This file discibes application which reads data from file, add data to list and displayed it with sorting by salary/scholarship.
+This file discibes application which reads data from file and displayed it with sorting.
 
 Application contain 4 files: Main.py, Humans.py, Controller.py, input.txt

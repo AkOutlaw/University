@@ -34,16 +34,17 @@ class Controller:
 
     def getSalaryOrScholarship(listOfHumans):
         for obj in listOfHumans: # get class object one by one
-            #print(type(obj))
             if hasattr(obj, 'scholarship'):
-                return obj.scholarship
+                return Humans.Student.getSizeOfMoney(obj)
             elif hasattr(obj, 'salary'):
-                return obj.salary
+                return Humans.Teacher.getSizeOfMoney(obj)
+
 
 # Process of sorting by Salary
     def sortBySalaryHighToLow(listOfHumans):
-        #listOfHumansOrdered = sorted(listOfHumans,  key=lambda x: int(x.scholarship), reverse=True)  # sorting from high to low
-        listOfHumansOrdered = sorted(listOfHumans, key=lambda x: int(x.scholarship) if int(x.scholarship) else int(x.salary), reverse=True)  # sorting from high to low
+        listOfHumansOrdered = sorted(listOfHumans,  key=lambda x: int(x.scholarship), reverse=True)  # sorting from high to low
+        #listOfHumansOrdered = sorted(listOfHumans,  key=lambda x: int(x(Controller.getSalaryOrScholarship(listOfHumans))), reverse=True)  # sorting from high to low
+        #listOfHumansOrdered = sorted(listOfHumans, key=lambda x: int(x.getSalaryOrScholarship(listOfHumans)), reverse=True)  # sorting from high to low
         return listOfHumansOrdered
 
 # Process of printing data using formation
@@ -54,7 +55,7 @@ class Controller:
                 print('|First name - %6s;  |  Last name - %10s;  |   Date Of Birth - %10s;  |  scholarship- %5s;  |  faculty - %4s;  |  courseofstudy - %9s;|' # get fields from object
                       % (obj.firstName, obj.surName, obj.dataOfBirth, obj.scholarship, obj.faculty, obj.courseOfStudy))
             if hasattr(obj, 'experience'):
-                print('|First name - %6s;  |  Last name - %10s;  |   Date Of Birth - %10s;  |  Salary - %5s;  |  faculty - %4s;  |  expirience - %9s;|' # get fields from object
+                print('|First name - %6s;  |  Last name - %10s;  |   Date Of Birth - %10s;  |  Salary - %9s;  |  faculty - %4s;  |  expirience - %12s;|' # get fields from object
                       % (obj.firstName, obj.surName, obj.dataOfBirth, obj.salary, obj.faculty, obj.experience))
 # Process of reading data from file; return as massive
     def readMass(path):

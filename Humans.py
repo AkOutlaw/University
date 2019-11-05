@@ -21,8 +21,8 @@ class Student(People): #parent class Student with init constructor
         self.faculty = faculty
         self.courseOfStudy = courseofstudy
 
-    def getSizeOfMoney(student):
-        return student.scholarship
+    def getSizeOfMoney(self):
+        return self.scholarship
 
 class Teacher(People): #parent class Teacher with init constructor
     def __init__(self, firstname, lastname, dateofbirth, salary, faculty, experience):
@@ -33,5 +33,5 @@ class Teacher(People): #parent class Teacher with init constructor
         self.faculty = faculty
         self.experience = experience
 
-    def getSizeOfMoney(teacher):
-        return teacher.salary
+    def getSizeOfMoney(self):
+        return self.salary

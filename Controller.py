@@ -8,16 +8,15 @@ class Controller:
         listOfMunans = []
         # listOfStudents = []
         # listOfTeachers = []
+        teacherIdentidier = 'salary'
 
         for row in mass:
             temp = []
             isStudent = 0
-            #print(row[3])
-            if 'salary' in row[3]:
+            if teacherIdentidier in row[3]: # is row contains 'salary' then Teacher
                 isStudent = 0
             else:
                 isStudent = 1
-            #print(isStudent)
             for elem in row:
                 elem = (elem[elem.find("=") + 1 : ])
                 temp.append(elem)
@@ -32,19 +31,9 @@ class Controller:
 
         return listOfMunans
 
-    def getSalaryOrScholarship(listOfHumans):
-        for obj in listOfHumans: # get class object one by one
-            if hasattr(obj, 'scholarship'):
-                return Humans.Student.getSizeOfMoney(obj)
-            elif hasattr(obj, 'salary'):
-                return Humans.Teacher.getSizeOfMoney(obj)
-
-
 # Process of sorting by Salary
     def sortBySalaryHighToLow(listOfHumans):
-        listOfHumansOrdered = sorted(listOfHumans,  key=lambda x: int(x.scholarship), reverse=True)  # sorting from high to low
-        #listOfHumansOrdered = sorted(listOfHumans,  key=lambda x: int(x(Controller.getSalaryOrScholarship(listOfHumans))), reverse=True)  # sorting from high to low
-        #listOfHumansOrdered = sorted(listOfHumans, key=lambda x: int(x.getSalaryOrScholarship(listOfHumans)), reverse=True)  # sorting from high to low
+        listOfHumansOrdered = sorted(listOfHumans,  key=lambda x: int(x.getSizeOfMoney()), reverse=True)  # sorting from high to low
         return listOfHumansOrdered
 
 # Process of printing data using formation

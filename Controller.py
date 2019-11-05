@@ -18,11 +18,12 @@ class Controller:
             else:
                 isStudent = 1
             for elem in row:
-                elem = (elem[elem.find("=") + 1 : ])
+                elem = elem.split('=') # split row to get value for field of the object
+                elem = elem[1]  # get values
                 temp.append(elem)
             if isStudent == 1:
-                student = Humans.Student(*temp)
-                listOfMunans.append(student)
+                student = Humans.Student(*temp) # Create class object Student
+                listOfMunans.append(student) #add Student to list
                 #listOfStudents.append(student)
             elif isStudent == 0:
                 teacher = Humans.Teacher(*temp)
